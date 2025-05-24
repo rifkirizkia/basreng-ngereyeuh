@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basreng Ngereyeuh - Spicy Fried Meatball Snacks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#FF4B3E", secondary: "#FF9F1C" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .font-serif {
+        font-family: "Merriweather", serif;
+      }
+      .hero-section {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("https://readdy.ai/api/search-image?query=delicious%20spicy%20fried%20meatball%20snacks%20arranged%20on%20a%20wooden%20serving%20board%20with%20red%20chili%20peppers%20scattered%20around%2C%20warm%20lighting%2C%20professional%20food%20photography%2C%20appetizing%2C%20crispy%20texture%20visible%2C%20steam%20rising%2C%20high-quality%20image%2C%20no%20people%2C%20close-up%20shot%2C%20shallow%20depth%20of%20field&width=1920&height=1080&seq=1&orientation=landscape");
+        background-size: cover;
+        background-position: center;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
+      }
+      .custom-checkbox {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ff4b3e;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+      }
+      .custom-checkbox:checked {
+        background-color: #ff4b3e;
+      }
+      .custom-checkbox:checked::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        top: 2px;
+        left: 6px;
+        transform: rotate(45deg);
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .whatsapp-button {
+        animation: pulse 2s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+          >Basreng Ngereyeuh</a
+        >
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >About Us</a
+          >
+          <a
+            href="#products"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Products</a
+          >
+          <a
+            href="#contact"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Navigation Toggle -->
+        <button
+          id="mobile-menu-toggle"
+          class="md:hidden w-10 h-10 flex items-center justify-center text-gray-800"
+        >
+          <i class="ri-menu-line ri-2x"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a
+            href="#home"
+            class="font-medium text-gray-800 hover:text-primary transition-colors py-2"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="font-medium text-gray-800 hover:text-primary transition-colors py-2"
+            >About Us</a
+          >
+          <a
+            href="#products"
+            class="font-medium text-gray-800 hover:text-primary transition-colors py-2"
+            >Products</a
+          >
+          <a
+            href="#contact"
+            class="font-medium text-gray-800 hover:text-primary transition-colors py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/1234567890"
+      class="whatsapp-button fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-50 hover:bg-green-600 transition-colors"
+    >
+      <i class="ri-whatsapp-line ri-2x"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-section min-h-screen flex items-center pt-16"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('https://readdy.ai/api/search-image?query=delicious%20spicy%20fried%20meatball%20snacks%20arranged%20on%20a%20wooden%20serving%20board%20with%20red%20chili%20peppers%20scattered%20around%2C%20warm%20lighting%2C%20professional%20food%20photography%2C%20appetizing%2C%20crispy%20texture%20visible%2C%20steam%20rising%2C%20high-quality%20image%2C%20no%20people%2C%20close-up%20shot%2C%20shallow%20depth%20of%20field&width=1920&height=1080&seq=1&orientation=landscape');
+      "
+    >
+      <div class="container mx-auto px-4 py-20">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
+            Basreng Ngereyeuh
+          </h1>
+          <p class="text-2xl md:text-3xl text-white font-light mb-8">
+            Try it once, crave it forever!
+          </p>
+          <p class="text-lg text-white mb-10 max-w-xl">
+            Experience the irresistible crunch and spicy kick of our premium
+            fried meatball snacks. Made with authentic Indonesian recipes and
+            the finest ingredients.
+          </p>
+          <button
+            class="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold !rounded-button shadow-lg transition-all whitespace-nowrap"
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+          Our Vision & Mission
+        </h2>
+
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <div
+            class="w-full md:w-1/2 bg-gray-50 p-8 rounded shadow-md transform transition-transform hover:scale-105"
+          >
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-eye-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-center mb-4">Our Vision</h3>
+            <p class="text-gray-700 font-serif leading-relaxed text-center">
+              To become a leading snack brand that introduces authentic
+              Indonesian flavors to a wider audience, creating memorable taste
+              experiences that bring people together while preserving
+              traditional culinary heritage.
+            </p>
+          </div>
+
+          <div
+            class="w-full md:w-1/2 bg-gray-50 p-8 rounded shadow-md transform transition-transform hover:scale-105"
+          >
+            <div
+              class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-flag-line ri-xl text-secondary"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-center mb-4">Our Mission</h3>
+            <p class="text-gray-700 font-serif leading-relaxed text-center">
+              To provide high-quality, affordable, and delicious basreng while
+              supporting local communities and empowering youth
+              entrepreneurship. We're committed to using sustainable practices
+              and creating economic opportunities in our community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+          Our Products
+        </h2>
+        <p class="text-gray-700 text-center max-w-2xl mx-auto mb-16 font-serif">
+          Discover our range of delicious Basreng varieties, each crafted with
+          care using traditional recipes and premium ingredients.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=spicy%20fried%20meatball%20snacks%20with%20visible%20red%20chili%20flakes%2C%20crispy%20golden%20brown%20texture%2C%20arranged%20on%20a%20clean%20white%20plate%2C%20professional%20food%20photography%2C%20bright%20lighting%2C%20appetizing%20appearance%2C%20no%20people%2C%20close-up%20shot&width=600&height=400&seq=2&orientation=landscape"
+                alt="Original Basreng"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h3 class="text-xl font-bold">Original Spicy</h3>
+                <span
+                  class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                  >Bestseller</span
+                >
+              </div>
+              <p class="text-gray-700 mb-4 font-serif">
+                Our signature basreng with the perfect balance of spiciness and
+                savory flavors. A timeless classic that never disappoints.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$4.99</span>
+                <button
+                  class="bg-primary hover:bg-primary/90 text-white px-4 py-2 font-medium !rounded-button transition-colors whitespace-nowrap"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=extra%20spicy%20fried%20meatball%20snacks%20with%20visible%20red%20chili%20powder%20coating%2C%20deep%20red%20color%2C%20arranged%20on%20a%20black%20plate%2C%20steam%20rising%2C%20professional%20food%20photography%2C%20dramatic%20lighting%2C%20appetizing%20appearance%2C%20no%20people%2C%20close-up%20shot&width=600&height=400&seq=3&orientation=landscape"
+                alt="Extra Hot Basreng"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h3 class="text-xl font-bold">Extra Hot</h3>
+                <span
+                  class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-medium"
+                  >🔥 Spicy</span
+                >
+              </div>
+              <p class="text-gray-700 mb-4 font-serif">
+                For those who love an intense heat experience. Our extra hot
+                basreng will challenge even the most seasoned spice enthusiasts.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$5.49</span>
+                <button
+                  class="bg-primary hover:bg-primary/90 text-white px-4 py-2 font-medium !rounded-button transition-colors whitespace-nowrap"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=cheese%20flavored%20fried%20meatball%20snacks%20with%20visible%20cheese%20powder%20coating%2C%20golden%20yellow%20color%2C%20arranged%20on%20a%20wooden%20board%2C%20professional%20food%20photography%2C%20warm%20lighting%2C%20appetizing%20appearance%2C%20no%20people%2C%20close-up%20shot&width=600&height=400&seq=4&orientation=landscape"
+                alt="Cheese Basreng"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h3 class="text-xl font-bold">Cheesy Delight</h3>
+                <span
+                  class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium"
+                  >New</span
+                >
+              </div>
+              <p class="text-gray-700 mb-4 font-serif">
+                A perfect fusion of spicy basreng with rich cheese flavor. The
+                creamy cheese complements the spiciness for a unique taste
+                experience.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-lg font-bold">$5.99</span>
+                <button
+                  class="bg-primary hover:bg-primary/90 text-white px-4 py-2 font-medium !rounded-button transition-colors whitespace-nowrap"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-12 items-center">
+          <div class="w-full lg:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
+            <p class="text-gray-700 mb-4 font-serif leading-relaxed">
+              Basreng Ngereyeuh was born from a passion for authentic Indonesian
+              flavors and a desire to share our cultural heritage through food.
+              What started as a small home kitchen experiment in 2018 has grown
+              into a beloved local brand.
+            </p>
+            <p class="text-gray-700 mb-6 font-serif leading-relaxed">
+              Our founder, Michael Williams, discovered the unique taste of
+              basreng during his travels through Indonesia and was inspired to
+              create his own version with a focus on quality ingredients and
+              authentic flavors.
+            </p>
+
+            <div class="mb-8">
+              <h3 class="text-xl font-bold mb-4">Our Values</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-primary"></i>
+                  </div>
+                  <p class="text-gray-700 font-serif">
+                    Quality ingredients sourced from local suppliers
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-primary"></i>
+                  </div>
+                  <p class="text-gray-700 font-serif">
+                    Traditional recipes with modern innovation
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-primary"></i>
+                  </div>
+                  <p class="text-gray-700 font-serif">
+                    Supporting local communities through employment
+                  </p>
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-3 mt-1"
+                  >
+                    <i class="ri-check-line text-primary"></i>
+                  </div>
+                  <p class="text-gray-700 font-serif">
+                    Sustainable packaging and responsible practices
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+            <img
+              src="https://readdy.ai/api/search-image?query=small%20food%20production%20kitchen%20with%20staff%20preparing%20fried%20meatball%20snacks%2C%20clean%20environment%2C%20professional%20setting%2C%20people%20wearing%20aprons%20and%20hairnets%2C%20warm%20lighting%2C%20authentic%20food%20preparation%2C%20documentary%20style%20photography&width=400&height=300&seq=5&orientation=landscape"
+              alt="Our Kitchen"
+              class="rounded-lg shadow-md h-48 object-cover object-top"
+            />
+            <img
+              src="https://readdy.ai/api/search-image?query=close%20up%20of%20hands%20preparing%20spicy%20fried%20meatball%20mixture%2C%20adding%20spices%20and%20ingredients%2C%20authentic%20food%20preparation%2C%20professional%20documentary%20style%20photography%2C%20warm%20lighting%2C%20no%20faces%20visible&width=400&height=300&seq=6&orientation=landscape"
+              alt="Preparation Process"
+              class="rounded-lg shadow-md h-48 object-cover object-top"
+            />
+            <img
+              src="https://readdy.ai/api/search-image?query=packaging%20of%20spicy%20fried%20meatball%20snacks%2C%20branded%20packaging%20with%20logo%20visible%2C%20professional%20product%20photography%2C%20clean%20background%2C%20multiple%20packages%20arranged%20neatly%2C%20retail%20ready%20appearance&width=400&height=300&seq=7&orientation=landscape"
+              alt="Packaging"
+              class="rounded-lg shadow-md h-48 object-cover object-top"
+            />
+            <img
+              src="https://readdy.ai/api/search-image?query=happy%20customers%20enjoying%20spicy%20fried%20meatball%20snacks%20at%20a%20food%20market%20or%20festival%2C%20diverse%20group%20of%20people%2C%20authentic%20candid%20moment%2C%20warm%20lighting%2C%20documentary%20style%20photography%2C%20joyful%20expressions&width=400&height=300&seq=8&orientation=landscape"
+              alt="Happy Customers"
+              class="rounded-lg shadow-md h-48 object-cover object-top"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+          Our Journey
+        </h2>
+
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div
+            class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"
+          ></div>
+
+          <!-- Timeline Items -->
+          <div class="space-y-20">
+            <!-- 2018 -->
+            <div class="relative">
+              <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3">
+                <div class="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
+              <div class="flex flex-col md:flex-row items-center">
+                <div
+                  class="w-full md:w-1/2 md:pr-16 md:text-right mb-6 md:mb-0"
+                >
+                  <h3 class="text-xl font-bold mb-2">2018</h3>
+                  <p class="text-gray-700 font-serif">
+                    Founded as a home kitchen experiment with our first recipe
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-16">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=small%20home%20kitchen%20with%20basic%20equipment%2C%20someone%20preparing%20food%2C%20warm%20lighting%2C%20cozy%20atmosphere%2C%20documentary%20style%20photography%2C%20authentic%20moment&width=400&height=250&seq=9&orientation=landscape"
+                    alt="2018 Beginning"
+                    class="rounded-lg shadow-md w-full h-48 object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="relative">
+              <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3">
+                <div class="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
+              <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="w-full md:w-1/2 md:pl-16 md:text-left mb-6 md:mb-0">
+                  <h3 class="text-xl font-bold mb-2">2020</h3>
+                  <p class="text-gray-700 font-serif">
+                    Opened our first small production facility and launched
+                    online sales
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 md:pr-16">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=small%20food%20production%20facility%20with%20basic%20equipment%2C%20clean%20environment%2C%20a%20few%20staff%20members%20working%2C%20warm%20lighting%2C%20documentary%20style%20photography%2C%20authentic%20moment&width=400&height=250&seq=10&orientation=landscape"
+                    alt="2020 Expansion"
+                    class="rounded-lg shadow-md w-full h-48 object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="relative">
+              <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3">
+                <div class="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
+              <div class="flex flex-col md:flex-row items-center">
+                <div
+                  class="w-full md:w-1/2 md:pr-16 md:text-right mb-6 md:mb-0"
+                >
+                  <h3 class="text-xl font-bold mb-2">2022</h3>
+                  <p class="text-gray-700 font-serif">
+                    Expanded product line with new flavors and reached 10,000
+                    customers
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 md:pl-16">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=food%20product%20display%20with%20multiple%20flavors%20and%20varieties%2C%20professional%20product%20photography%2C%20clean%20background%2C%20branded%20packaging%20visible%2C%20retail%20ready%20appearance&width=400&height=250&seq=11&orientation=landscape"
+                    alt="2022 Product Line"
+                    class="rounded-lg shadow-md w-full h-48 object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 2025 -->
+            <div class="relative">
+              <div class="absolute left-1/2 transform -translate-x-1/2 -mt-3">
+                <div class="w-6 h-6 bg-primary rounded-full"></div>
+              </div>
+              <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="w-full md:w-1/2 md:pl-16 md:text-left mb-6 md:mb-0">
+                  <h3 class="text-xl font-bold mb-2">2025</h3>
+                  <p class="text-gray-700 font-serif">
+                    Today: Serving customers nationwide with a focus on quality
+                    and community
+                  </p>
+                </div>
+                <div class="w-full md:w-1/2 md:pr-16">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20food%20production%20facility%20with%20staff%2C%20clean%20professional%20environment%2C%20branded%20elements%20visible%2C%20warm%20lighting%2C%20documentary%20style%20photography%2C%20authentic%20moment&width=400&height=250&seq=12&orientation=landscape"
+                    alt="2025 Today"
+                    class="rounded-lg shadow-md w-full h-48 object-cover object-top"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+          Get in Touch
+        </h2>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="w-full lg:w-1/2">
+            <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+              <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 mb-2 font-medium"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 mb-2 font-medium"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label for="phone" class="block text-gray-700 mb-2 font-medium"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your phone number"
+                />
+              </div>
+
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-gray-700 mb-2 font-medium"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+
+              <div class="mb-6 flex items-start">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  class="custom-checkbox mr-3 mt-1"
+                />
+                <label for="consent" class="text-gray-700 text-sm font-serif"
+                  >I agree to receive promotional emails and updates from
+                  Basreng Ngereyeuh. You can unsubscribe at any time.</label
+                >
+              </div>
+
+              <button
+                type="submit"
+                class="bg-primary hover:bg-primary/90 text-white px-6 py-3 font-semibold !rounded-button transition-colors w-full whitespace-nowrap"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="w-full lg:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+              <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Our Location</h4>
+                    <p class="text-gray-700 font-serif">
+                      123 Spice Street, Flavor District<br />Jakarta, Indonesia
+                      12345
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-time-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Business Hours</h4>
+                    <p class="text-gray-700 font-serif">
+                      Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM
+                      - 4:00 PM<br />Sunday: Closed
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Phone</h4>
+                    <p class="text-gray-700 font-serif">+62 123 456 7890</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                    <p class="text-gray-700 font-serif">
+                      info@basrengngereyeuh.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-bold text-gray-900 mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors"
+                  >
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors"
+                  >
+                    <i class="ri-instagram-line"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors"
+                  >
+                    <i class="ri-twitter-x-line"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-gray-200 hover:bg-primary hover:text-white rounded-full transition-colors"
+                  >
+                    <i class="ri-tiktok-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-8 h-64 bg-gray-200 rounded overflow-hidden">
+                <div
+                  style="
+                    background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Company Info -->
+          <div>
+            <h3 class="text-xl font-['Pacifico'] mb-6">Basreng Ngereyeuh</h3>
+            <p class="text-gray-400 mb-6 font-serif">
+              Bringing authentic Indonesian flavors to your snack time. Our
+              mission is to share the joy of traditional basreng with the world.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
+                <i class="ri-tiktok-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors font-serif"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div>
+            <h3 class="text-lg font-bold mb-6">Subscribe to Our Newsletter</h3>
+            <p class="text-gray-400 mb-4 font-serif">
+              Stay updated with our latest products and promotions.
+            </p>
+            <form class="flex mb-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="px-4 py-2 w-full text-gray-900 rounded-l border-none"
+              />
+              <button
+                type="submit"
+                class="bg-primary hover:bg-primary/90 px-4 py-2 rounded-r font-medium transition-colors whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </form>
+            <div class="mt-6">
+              <h4 class="text-sm font-bold mb-3">Payment Methods</h4>
+              <div class="flex space-x-3">
+                <i class="ri-visa-fill text-gray-400 text-2xl"></i>
+                <i class="ri-mastercard-fill text-gray-400 text-2xl"></i>
+                <i class="ri-paypal-fill text-gray-400 text-2xl"></i>
+                <i class="ri-bank-card-fill text-gray-400 text-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500 text-sm mb-4 md:mb-0 font-serif">
+            © 2025 Basreng Ngereyeuh. All rights reserved.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors font-serif"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors font-serif"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 hover:text-white text-sm transition-colors font-serif"
+              >Shipping Info</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="mobile-menu-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        mobileMenuToggle.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+
+          // Change icon based on menu state
+          const icon = mobileMenuToggle.querySelector("i");
+          if (mobileMenu.classList.contains("hidden")) {
+            icon.className = "ri-menu-line ri-2x";
+          } else {
+            icon.className = "ri-close-line ri-2x";
+          }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+            mobileMenuToggle.querySelector("i").className =
+              "ri-menu-line ri-2x";
+          });
+        });
+      });
+    </script>
+
+    <script id="scroll-animation-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80, // Adjust for header height
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add fixed header shadow on scroll
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 10) {
+            header.classList.add("shadow-md");
+          } else {
+            header.classList.remove("shadow-md");
+          }
+        });
+      });
+    </script>
+
+    <script id="form-validation-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.querySelector("#contact form");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Simple validation
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            let isValid = true;
+            let errorMessage = "";
+
+            if (!name.trim()) {
+              isValid = false;
+              errorMessage += "Name is required.\n";
+            }
+
+            if (!email.trim()) {
+              isValid = false;
+              errorMessage += "Email is required.\n";
+            } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+              isValid = false;
+              errorMessage += "Please enter a valid email address.\n";
+            }
+
+            if (!message.trim()) {
+              isValid = false;
+              errorMessage += "Message is required.\n";
+            }
+
+            if (isValid) {
+              // Simulate form submission
+              alert(
+                "Thank you for your message! We will get back to you soon."
+              );
+              contactForm.reset();
+            } else {
+              alert(errorMessage);
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
